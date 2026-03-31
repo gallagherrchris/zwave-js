@@ -75,22 +75,22 @@
 		{
 			"#": "7[0x01]",
 			"$if": "firmwareVersion >= 10.30 || firmwareVersion >= 2.20 && firmwareVersion < 3.0 || firmwareVersion >= 3.10",
-			"$import": "templates/zooz_template.json#association_reports_physical"
+			"$import": "templates/zooz_template.json#control_device_trigger_physical"
 		},
 		{
 			"#": "7[0x02]",
 			"$if": "firmwareVersion >= 10.30 || firmwareVersion >= 2.20 && firmwareVersion < 3.0 || firmwareVersion >= 3.10",
-			"$import": "templates/zooz_template.json#association_reports_3way"
+			"$import": "templates/zooz_template.json#control_device_trigger_3way"
 		},
 		{
 			"#": "7[0x04]",
 			"$if": "firmwareVersion >= 10.30 || firmwareVersion >= 2.20 && firmwareVersion < 3.0 || firmwareVersion >= 3.10",
-			"$import": "templates/zooz_template.json#association_reports_zwave"
+			"$import": "templates/zooz_template.json#control_device_trigger_zwave"
 		},
 		{
 			"#": "7[0x08]",
 			"$if": "firmwareVersion >= 10.30 || firmwareVersion >= 2.20 && firmwareVersion < 3.0 || firmwareVersion >= 3.10",
-			"$import": "templates/zooz_template.json#association_reports_timer"
+			"$import": "templates/zooz_template.json#control_device_trigger_timer"
 		},
 		{
 			"#": "8",

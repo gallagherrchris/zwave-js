@@ -442,33 +442,34 @@
 			}
 		]
 	},
-	// Separate out the bitmask for association reports into individual parameters for better clarity in the UI
+	// Separate out the bitmask for controlling associated devices into
+	// individual parameters for better clarity in the UI
 	// [0x01] Physical tap of the device
 	// [0x02] Physical tap of connected 3-way switch
 	// [0x04] Z-Wave control of the switch
 	// [0x08] Timer trigger
-	"association_reports_physical": {
+	"control_device_trigger_physical": {
 		"$import": "~/templates/master_template.json#base_enable_disable",
-		"label": "Association Reports: Phyiscal tap",
-		"description": "Send status change report on physical tap of device to the associated devices (Group 2).",
+		"label": "Control Associated Devices: Local Control",
+		"description": "Whether locally controlling the device should cause it to control its associated devices.",
 		"defaultValue": 1
 	},
-	"association_reports_3way": {
+	"control_device_trigger_3way": {
 		"$import": "~/templates/master_template.json#base_enable_disable",
-		"label": "Association Reports: 3-Way Switch Tap",
-		"description": "Send status change report on physical tap of connected 3-way switch to the associated devices (Group 2).",
+		"label": "Control Associated Devices: 3-Way Switch",
+		"description": "Whether using the connected 3-way switch should cause the device to control its associated devices.",
 		"defaultValue": 1
 	},
-	"association_reports_zwave": {
+	"control_device_trigger_zwave": {
 		"$import": "~/templates/master_template.json#base_enable_disable",
-		"label": "Association Reports: Z-Wave Control",
-		"description": "Send status change report on Z-Wave control of the switch to the associated devices (Group 2).",
+		"label": "Control Associated Devices: Z-Wave Commands",
+		"description": "Whether controlling the device through Z-Wave commands should cause it to control its associated devices.",
 		"defaultValue": 1
 	},
-	"association_reports_timer": {
+	"control_device_trigger_timer": {
 		"$import": "~/templates/master_template.json#base_enable_disable",
-		"label": "Association Reports: Timer",
-		"description": "Send status change report on timer trigger to the associated devices (Group 2).",
+		"label": "Control Associated Devices: Timer",
+		"description": "Whether a timer trigger should cause the device to control its associated devices.",
 		"defaultValue": 1
 	},
 	"dimmer_ramp_rate": {
